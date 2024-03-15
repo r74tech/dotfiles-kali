@@ -154,3 +154,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+alias rustscan='sudo docker run -it --rm --name rustscan x0f5c3/rustscan_arm:2.1.0'

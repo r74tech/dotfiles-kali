@@ -256,3 +256,5 @@ fi
 if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
+
+alias rustscan='sudo docker run -it --rm --name rustscan x0f5c3/rustscan_arm:2.1.0'
