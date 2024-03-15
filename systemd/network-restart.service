@@ -1,0 +1,10 @@
+[Unit]
+Description=Restart Networking and get new DHCP lease
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c '/etc/init.d/networking restart && dhclient'
+
+[Install]
+WantedBy=multi-user.target
